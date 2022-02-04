@@ -1,6 +1,6 @@
 ## Description
 
-Terminal tool to easily add movies and shows watched each month to Trakt lists.
+CLI to easily add movies and shows watched each month to Trakt lists.
 
 ![screenshot](https://github.com/iFonny/trakt-monthly-list/blob/assets/screenshot.png)
 

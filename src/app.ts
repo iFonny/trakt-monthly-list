@@ -34,7 +34,7 @@ async function run() {
     // Create and get the trakt list for the month
     const selectedList = await createTraktList(prompt, `[${yearMonth}] TV SHOWS`, `TV Shows watched in ${yearMonth}`);
 
-    // Get the list of shows to add in the list
+    // Get/select the list of shows to add to the list
     const selectedShows = await getShowsToAddToList(prompt, watchedShows);
 
     // Add items to list
@@ -53,11 +53,11 @@ async function run() {
     // Create and get the trakt list for the month
     const selectedList = await createTraktList(prompt, `[${yearMonth}] MOVIES`, `Movies watched in ${yearMonth}`);
 
-    // Get the list of shows to add in the list
-    const selectedShows = await getMoviesToAddToList(prompt, watchedMovies);
+    // Get/select the list of movies to add to the list
+    const selectedMovies = await getMoviesToAddToList(prompt, watchedMovies);
 
     // Add items to list
-    await addMoviesToList(selectedList, selectedShows);
+    await addMoviesToList(selectedList, selectedMovies);
   }
 
   console.info('ツ'.rainbow);

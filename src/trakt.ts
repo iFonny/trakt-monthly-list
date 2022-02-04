@@ -50,7 +50,7 @@ export class Trakt {
     let settings = await this.trakt.users.settings();
     this.username = settings.user.username;
 
-    if (this.username) console.info('Logged to Trakt using', yellow(this.username));
+    if (this.username) console.info('Logged to Trakt as', yellow(this.username));
     else {
       console.error('Trakt login failed');
       process.exit(1);

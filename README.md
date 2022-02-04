@@ -1,1 +1,1 @@
-trakt-monthly-view
+trakt-monthly-list
